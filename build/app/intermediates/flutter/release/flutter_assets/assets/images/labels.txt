@@ -1,0 +1,6 @@
+0 Headphone
+1 Jeans
+2 Laptop
+3 Smartphone
+4 Television
+5 Watch

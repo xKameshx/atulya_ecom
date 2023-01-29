@@ -1,0 +1,363 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.atulya_app"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->E:\flutter\minor Project\atulya_app\android\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="31" />
+9-->E:\flutter\minor Project\atulya_app\android\app\src\main\AndroidManifest.xml
+10
+11    <queries>
+11-->E:\flutter\minor Project\atulya_app\android\app\src\main\AndroidManifest.xml:3:5-19:11
+12
+13        <!-- If your app opens https URLs -->
+14        <intent>
+14-->E:\flutter\minor Project\atulya_app\android\app\src\main\AndroidManifest.xml:5:3-8:12
+15            <action android:name="android.intent.action.VIEW" />
+15-->E:\flutter\minor Project\atulya_app\android\app\src\main\AndroidManifest.xml:6:5-57
+15-->E:\flutter\minor Project\atulya_app\android\app\src\main\AndroidManifest.xml:6:13-54
+16
+17            <data android:scheme="https" />
+17-->E:\flutter\minor Project\atulya_app\android\app\src\main\AndroidManifest.xml:7:5-36
+17-->E:\flutter\minor Project\atulya_app\android\app\src\main\AndroidManifest.xml:7:11-33
+18        </intent>
+19        <!-- If your app makes calls -->
+20        <intent>
+20-->E:\flutter\minor Project\atulya_app\android\app\src\main\AndroidManifest.xml:10:3-13:12
+21            <action android:name="android.intent.action.DIAL" />
+21-->E:\flutter\minor Project\atulya_app\android\app\src\main\AndroidManifest.xml:11:5-57
+21-->E:\flutter\minor Project\atulya_app\android\app\src\main\AndroidManifest.xml:11:13-54
+22
+23            <data android:scheme="tel" />
+23-->E:\flutter\minor Project\atulya_app\android\app\src\main\AndroidManifest.xml:7:5-36
+23-->E:\flutter\minor Project\atulya_app\android\app\src\main\AndroidManifest.xml:7:11-33
+24        </intent>
+25        <!-- If your app emails -->
+26        <intent>
+26-->E:\flutter\minor Project\atulya_app\android\app\src\main\AndroidManifest.xml:15:3-18:12
+27            <action android:name="android.intent.action.SEND" />
+27-->E:\flutter\minor Project\atulya_app\android\app\src\main\AndroidManifest.xml:16:5-57
+27-->E:\flutter\minor Project\atulya_app\android\app\src\main\AndroidManifest.xml:16:13-54
+28
+29            <data android:mimeType="*/*" />
+29-->E:\flutter\minor Project\atulya_app\android\app\src\main\AndroidManifest.xml:7:5-36
+29-->E:\flutter\minor Project\atulya_app\android\app\src\main\AndroidManifest.xml:17:11-33
+30        </intent>
+31    </queries>
+32
+33    <uses-permission android:name="android.permission.INTERNET" /> <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
+33-->[:google_sign_in] E:\flutter\minor Project\atulya_app\build\google_sign_in\intermediates\library_manifest\release\AndroidManifest.xml:7:5-67
+33-->[:google_sign_in] E:\flutter\minor Project\atulya_app\build\google_sign_in\intermediates\library_manifest\release\AndroidManifest.xml:7:22-64
+34    <!-- <uses-sdk android:minSdkVersion="14" /> -->
+35    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+35-->[com.google.firebase:firebase-firestore:24.0.0] C:\Users\harsh\.gradle\caches\transforms-2\files-2.1\f9fdcaaf23b11f7a45dfaa74b9544926\jetified-firebase-firestore-24.0.0\AndroidManifest.xml:13:5-79
+35-->[com.google.firebase:firebase-firestore:24.0.0] C:\Users\harsh\.gradle\caches\transforms-2\files-2.1\f9fdcaaf23b11f7a45dfaa74b9544926\jetified-firebase-firestore-24.0.0\AndroidManifest.xml:13:22-76
+36
+37    <application
+37-->E:\flutter\minor Project\atulya_app\android\app\src\main\AndroidManifest.xml:20:4-57:19
+38        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+38-->[androidx.core:core:1.6.0] C:\Users\harsh\.gradle\caches\transforms-2\files-2.1\4501684f105f116204225bd71498665d\core-1.6.0\AndroidManifest.xml:24:18-86
+39        android:icon="@mipmap/launcher_icon"
+39-->E:\flutter\minor Project\atulya_app\android\app\src\main\AndroidManifest.xml:22:9-45
+40        android:label="atulya_app" >
+40-->E:\flutter\minor Project\atulya_app\android\app\src\main\AndroidManifest.xml:21:9-35
+41        <activity
+41-->E:\flutter\minor Project\atulya_app\android\app\src\main\AndroidManifest.xml:23:9-51:20
+42            android:name="com.example.atulya_app.MainActivity"
+42-->E:\flutter\minor Project\atulya_app\android\app\src\main\AndroidManifest.xml:24:13-41
+43            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+43-->E:\flutter\minor Project\atulya_app\android\app\src\main\AndroidManifest.xml:27:13-163
+44            android:hardwareAccelerated="true"
+44-->E:\flutter\minor Project\atulya_app\android\app\src\main\AndroidManifest.xml:28:13-47
+45            android:launchMode="singleTop"
+45-->E:\flutter\minor Project\atulya_app\android\app\src\main\AndroidManifest.xml:25:13-43
+46            android:theme="@style/LaunchTheme"
+46-->E:\flutter\minor Project\atulya_app\android\app\src\main\AndroidManifest.xml:26:13-47
+47            android:windowSoftInputMode="adjustResize" >
+47-->E:\flutter\minor Project\atulya_app\android\app\src\main\AndroidManifest.xml:29:13-55
+48
+49            <!--
+50                 Specifies an Android theme to apply to this Activity as soon as
+51                 the Android process has started. This theme is visible to the user
+52                 while the Flutter UI initializes. After that, this theme continues
+53                 to determine the Window background behind the Flutter UI.
+54            -->
+55            <meta-data
+55-->E:\flutter\minor Project\atulya_app\android\app\src\main\AndroidManifest.xml:34:13-37:17
+56                android:name="io.flutter.embedding.android.NormalTheme"
+56-->E:\flutter\minor Project\atulya_app\android\app\src\main\AndroidManifest.xml:35:15-70
+57                android:resource="@style/NormalTheme" />
+57-->E:\flutter\minor Project\atulya_app\android\app\src\main\AndroidManifest.xml:36:15-52
+58            <!--
+59                 Displays an Android View that continues showing the launch screen
+60                 Drawable until Flutter paints its first frame, then this splash
+61                 screen fades out. A splash screen is useful to avoid any visual
+62                 gap between the end of Android's launch screen and the painting of
+63                 Flutter's first frame.
+64            -->
+65            <meta-data
+65-->E:\flutter\minor Project\atulya_app\android\app\src\main\AndroidManifest.xml:43:13-46:17
+66                android:name="io.flutter.embedding.android.SplashScreenDrawable"
+66-->E:\flutter\minor Project\atulya_app\android\app\src\main\AndroidManifest.xml:44:15-79
+67                android:resource="@drawable/launch_background" />
+67-->E:\flutter\minor Project\atulya_app\android\app\src\main\AndroidManifest.xml:45:15-61
+68
+69            <intent-filter>
+69-->E:\flutter\minor Project\atulya_app\android\app\src\main\AndroidManifest.xml:47:13-50:29
+70                <action android:name="android.intent.action.MAIN" />
+70-->E:\flutter\minor Project\atulya_app\android\app\src\main\AndroidManifest.xml:48:17-68
+70-->E:\flutter\minor Project\atulya_app\android\app\src\main\AndroidManifest.xml:48:25-66
+71
+72                <category android:name="android.intent.category.LAUNCHER" />
+72-->E:\flutter\minor Project\atulya_app\android\app\src\main\AndroidManifest.xml:49:17-76
+72-->E:\flutter\minor Project\atulya_app\android\app\src\main\AndroidManifest.xml:49:27-74
+73            </intent-filter>
+74        </activity>
+75        <!--
+76             Don't delete the meta-data below.
+77             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+78        -->
+79        <meta-data
+79-->E:\flutter\minor Project\atulya_app\android\app\src\main\AndroidManifest.xml:54:9-56:33
+80            android:name="flutterEmbedding"
+80-->E:\flutter\minor Project\atulya_app\android\app\src\main\AndroidManifest.xml:55:13-44
+81            android:value="2" />
+81-->E:\flutter\minor Project\atulya_app\android\app\src\main\AndroidManifest.xml:56:13-30
+82
+83        <provider
+83-->[:image_picker] E:\flutter\minor Project\atulya_app\build\image_picker\intermediates\library_manifest\release\AndroidManifest.xml:8:9-16:20
+84            android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
+84-->[:image_picker] E:\flutter\minor Project\atulya_app\build\image_picker\intermediates\library_manifest\release\AndroidManifest.xml:9:13-82
+85            android:authorities="com.example.atulya_app.flutter.image_provider"
+85-->[:image_picker] E:\flutter\minor Project\atulya_app\build\image_picker\intermediates\library_manifest\release\AndroidManifest.xml:10:13-74
+86            android:exported="false"
+86-->[:image_picker] E:\flutter\minor Project\atulya_app\build\image_picker\intermediates\library_manifest\release\AndroidManifest.xml:11:13-37
+87            android:grantUriPermissions="true" >
+87-->[:image_picker] E:\flutter\minor Project\atulya_app\build\image_picker\intermediates\library_manifest\release\AndroidManifest.xml:12:13-47
+88            <meta-data
+88-->[:image_picker] E:\flutter\minor Project\atulya_app\build\image_picker\intermediates\library_manifest\release\AndroidManifest.xml:13:13-15:75
+89                android:name="android.support.FILE_PROVIDER_PATHS"
+89-->[:image_picker] E:\flutter\minor Project\atulya_app\build\image_picker\intermediates\library_manifest\release\AndroidManifest.xml:14:17-67
+90                android:resource="@xml/flutter_image_picker_file_paths" />
+90-->[:image_picker] E:\flutter\minor Project\atulya_app\build\image_picker\intermediates\library_manifest\release\AndroidManifest.xml:15:17-72
+91        </provider>
+92
+93        <activity
+93-->[:url_launcher_android] E:\flutter\minor Project\atulya_app\build\url_launcher_android\intermediates\library_manifest\release\AndroidManifest.xml:8:9-11:74
+94            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
+94-->[:url_launcher_android] E:\flutter\minor Project\atulya_app\build\url_launcher_android\intermediates\library_manifest\release\AndroidManifest.xml:9:13-74
+95            android:exported="false"
+95-->[:url_launcher_android] E:\flutter\minor Project\atulya_app\build\url_launcher_android\intermediates\library_manifest\release\AndroidManifest.xml:10:13-37
+96            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+96-->[:url_launcher_android] E:\flutter\minor Project\atulya_app\build\url_launcher_android\intermediates\library_manifest\release\AndroidManifest.xml:11:13-71
+97
+98        <service
+98-->[:firebase_app_check] E:\flutter\minor Project\atulya_app\build\firebase_app_check\intermediates\library_manifest\release\AndroidManifest.xml:8:9-12:19
+99            android:name="com.google.firebase.components.ComponentDiscoveryService"
+99-->[:firebase_app_check] E:\flutter\minor Project\atulya_app\build\firebase_app_check\intermediates\library_manifest\release\AndroidManifest.xml:8:18-89
+100            android:directBootAware="true"
+100-->[com.google.firebase:firebase-common:20.0.0] C:\Users\harsh\.gradle\caches\transforms-2\files-2.1\a43864ea4e098ef6189d5e2b76fd253d\jetified-firebase-common-20.0.0\AndroidManifest.xml:35:13-43
+101            android:exported="false" >
+101-->[com.google.firebase:firebase-firestore:24.0.0] C:\Users\harsh\.gradle\caches\transforms-2\files-2.1\f9fdcaaf23b11f7a45dfaa74b9544926\jetified-firebase-firestore-24.0.0\AndroidManifest.xml:19:13-37
+102            <meta-data
+102-->[:firebase_app_check] E:\flutter\minor Project\atulya_app\build\firebase_app_check\intermediates\library_manifest\release\AndroidManifest.xml:9:13-11:85
+103                android:name="com.google.firebase.components:io.flutter.plugins.firebase.appcheck.FlutterFirebaseAppRegistrar"
+103-->[:firebase_app_check] E:\flutter\minor Project\atulya_app\build\firebase_app_check\intermediates\library_manifest\release\AndroidManifest.xml:10:17-127
+104                android:value="com.google.firebase.components.ComponentRegistrar" />
+104-->[:firebase_app_check] E:\flutter\minor Project\atulya_app\build\firebase_app_check\intermediates\library_manifest\release\AndroidManifest.xml:11:17-82
+105            <meta-data
+105-->[:cloud_firestore] E:\flutter\minor Project\atulya_app\build\cloud_firestore\intermediates\library_manifest\release\AndroidManifest.xml:9:13-11:85
+106                android:name="com.google.firebase.components:io.flutter.plugins.firebase.firestore.FlutterFirebaseFirestoreRegistrar"
+106-->[:cloud_firestore] E:\flutter\minor Project\atulya_app\build\cloud_firestore\intermediates\library_manifest\release\AndroidManifest.xml:10:17-134
+107                android:value="com.google.firebase.components.ComponentRegistrar" />
+107-->[:cloud_firestore] E:\flutter\minor Project\atulya_app\build\cloud_firestore\intermediates\library_manifest\release\AndroidManifest.xml:11:17-82
+108            <meta-data
+108-->[:firebase_database] E:\flutter\minor Project\atulya_app\build\firebase_database\intermediates\library_manifest\release\AndroidManifest.xml:9:13-11:85
+109                android:name="com.google.firebase.components:io.flutter.plugins.firebase.database.FlutterFirebaseAppRegistrar"
+109-->[:firebase_database] E:\flutter\minor Project\atulya_app\build\firebase_database\intermediates\library_manifest\release\AndroidManifest.xml:10:17-127
+110                android:value="com.google.firebase.components.ComponentRegistrar" />
+110-->[:firebase_database] E:\flutter\minor Project\atulya_app\build\firebase_database\intermediates\library_manifest\release\AndroidManifest.xml:11:17-82
+111            <meta-data
+111-->[:firebase_auth] E:\flutter\minor Project\atulya_app\build\firebase_auth\intermediates\library_manifest\release\AndroidManifest.xml:9:13-11:85
+112                android:name="com.google.firebase.components:io.flutter.plugins.firebase.auth.FlutterFirebaseAuthRegistrar"
+112-->[:firebase_auth] E:\flutter\minor Project\atulya_app\build\firebase_auth\intermediates\library_manifest\release\AndroidManifest.xml:10:17-124
+113                android:value="com.google.firebase.components.ComponentRegistrar" />
+113-->[:firebase_auth] E:\flutter\minor Project\atulya_app\build\firebase_auth\intermediates\library_manifest\release\AndroidManifest.xml:11:17-82
+114            <meta-data
+114-->[:firebase_core] E:\flutter\minor Project\atulya_app\build\firebase_core\intermediates\library_manifest\release\AndroidManifest.xml:9:13-11:85
+115                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
+115-->[:firebase_core] E:\flutter\minor Project\atulya_app\build\firebase_core\intermediates\library_manifest\release\AndroidManifest.xml:10:17-124
+116                android:value="com.google.firebase.components.ComponentRegistrar" />
+116-->[:firebase_core] E:\flutter\minor Project\atulya_app\build\firebase_core\intermediates\library_manifest\release\AndroidManifest.xml:11:17-82
+117            <meta-data
+117-->[com.google.firebase:firebase-firestore:24.0.0] C:\Users\harsh\.gradle\caches\transforms-2\files-2.1\f9fdcaaf23b11f7a45dfaa74b9544926\jetified-firebase-firestore-24.0.0\AndroidManifest.xml:20:13-22:85
+118                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+118-->[com.google.firebase:firebase-firestore:24.0.0] C:\Users\harsh\.gradle\caches\transforms-2\files-2.1\f9fdcaaf23b11f7a45dfaa74b9544926\jetified-firebase-firestore-24.0.0\AndroidManifest.xml:21:17-111
+119                android:value="com.google.firebase.components.ComponentRegistrar" />
+119-->[com.google.firebase:firebase-firestore:24.0.0] C:\Users\harsh\.gradle\caches\transforms-2\files-2.1\f9fdcaaf23b11f7a45dfaa74b9544926\jetified-firebase-firestore-24.0.0\AndroidManifest.xml:22:17-82
+120            <meta-data
+120-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\harsh\.gradle\caches\transforms-2\files-2.1\06e335a88f29e892ea89e02a9cd741a6\jetified-firebase-auth-21.0.1\AndroidManifest.xml:77:13-79:85
+121                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+121-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\harsh\.gradle\caches\transforms-2\files-2.1\06e335a88f29e892ea89e02a9cd741a6\jetified-firebase-auth-21.0.1\AndroidManifest.xml:78:17-109
+122                android:value="com.google.firebase.components.ComponentRegistrar" />
+122-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\harsh\.gradle\caches\transforms-2\files-2.1\06e335a88f29e892ea89e02a9cd741a6\jetified-firebase-auth-21.0.1\AndroidManifest.xml:79:17-82
+123            <meta-data
+123-->[com.google.firebase:firebase-database:20.0.3] C:\Users\harsh\.gradle\caches\transforms-2\files-2.1\9b5c7d43b2fb5262e2973b717576fb1a\jetified-firebase-database-20.0.3\AndroidManifest.xml:32:13-34:85
+124                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+124-->[com.google.firebase:firebase-database:20.0.3] C:\Users\harsh\.gradle\caches\transforms-2\files-2.1\9b5c7d43b2fb5262e2973b717576fb1a\jetified-firebase-database-20.0.3\AndroidManifest.xml:33:17-109
+125                android:value="com.google.firebase.components.ComponentRegistrar" />
+125-->[com.google.firebase:firebase-database:20.0.3] C:\Users\harsh\.gradle\caches\transforms-2\files-2.1\9b5c7d43b2fb5262e2973b717576fb1a\jetified-firebase-database-20.0.3\AndroidManifest.xml:34:17-82
+126            <meta-data
+126-->[com.google.firebase:firebase-appcheck:16.0.0-beta04] C:\Users\harsh\.gradle\caches\transforms-2\files-2.1\a136734bebb036a6880ca5c9d3ee289a\jetified-firebase-appcheck-16.0.0-beta04\AndroidManifest.xml:28:13-30:85
+127                android:name="com.google.firebase.components:com.google.firebase.appcheck.FirebaseAppCheckRegistrar"
+127-->[com.google.firebase:firebase-appcheck:16.0.0-beta04] C:\Users\harsh\.gradle\caches\transforms-2\files-2.1\a136734bebb036a6880ca5c9d3ee289a\jetified-firebase-appcheck-16.0.0-beta04\AndroidManifest.xml:29:17-117
+128                android:value="com.google.firebase.components.ComponentRegistrar" />
+128-->[com.google.firebase:firebase-appcheck:16.0.0-beta04] C:\Users\harsh\.gradle\caches\transforms-2\files-2.1\a136734bebb036a6880ca5c9d3ee289a\jetified-firebase-appcheck-16.0.0-beta04\AndroidManifest.xml:30:17-82
+129        </service>
+130
+131        <activity
+131-->[com.google.android.gms:play-services-auth:20.0.1] C:\Users\harsh\.gradle\caches\transforms-2\files-2.1\289d28dbd8d5514426a029c62384ee26\jetified-play-services-auth-20.0.1\AndroidManifest.xml:23:9-27:75
+132            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+132-->[com.google.android.gms:play-services-auth:20.0.1] C:\Users\harsh\.gradle\caches\transforms-2\files-2.1\289d28dbd8d5514426a029c62384ee26\jetified-play-services-auth-20.0.1\AndroidManifest.xml:24:13-93
+133            android:excludeFromRecents="true"
+133-->[com.google.android.gms:play-services-auth:20.0.1] C:\Users\harsh\.gradle\caches\transforms-2\files-2.1\289d28dbd8d5514426a029c62384ee26\jetified-play-services-auth-20.0.1\AndroidManifest.xml:25:13-46
+134            android:exported="false"
+134-->[com.google.android.gms:play-services-auth:20.0.1] C:\Users\harsh\.gradle\caches\transforms-2\files-2.1\289d28dbd8d5514426a029c62384ee26\jetified-play-services-auth-20.0.1\AndroidManifest.xml:26:13-37
+135            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+135-->[com.google.android.gms:play-services-auth:20.0.1] C:\Users\harsh\.gradle\caches\transforms-2\files-2.1\289d28dbd8d5514426a029c62384ee26\jetified-play-services-auth-20.0.1\AndroidManifest.xml:27:13-72
+136        <!--
+137            Service handling Google Sign-In user revocation. For apps that do not integrate with
+138            Google Sign-In, this service will never be started.
+139        -->
+140        <service
+140-->[com.google.android.gms:play-services-auth:20.0.1] C:\Users\harsh\.gradle\caches\transforms-2\files-2.1\289d28dbd8d5514426a029c62384ee26\jetified-play-services-auth-20.0.1\AndroidManifest.xml:33:9-37:51
+141            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+141-->[com.google.android.gms:play-services-auth:20.0.1] C:\Users\harsh\.gradle\caches\transforms-2\files-2.1\289d28dbd8d5514426a029c62384ee26\jetified-play-services-auth-20.0.1\AndroidManifest.xml:34:13-89
+142            android:exported="true"
+142-->[com.google.android.gms:play-services-auth:20.0.1] C:\Users\harsh\.gradle\caches\transforms-2\files-2.1\289d28dbd8d5514426a029c62384ee26\jetified-play-services-auth-20.0.1\AndroidManifest.xml:35:13-36
+143            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+143-->[com.google.android.gms:play-services-auth:20.0.1] C:\Users\harsh\.gradle\caches\transforms-2\files-2.1\289d28dbd8d5514426a029c62384ee26\jetified-play-services-auth-20.0.1\AndroidManifest.xml:36:13-107
+144            android:visibleToInstantApps="true" />
+144-->[com.google.android.gms:play-services-auth:20.0.1] C:\Users\harsh\.gradle\caches\transforms-2\files-2.1\289d28dbd8d5514426a029c62384ee26\jetified-play-services-auth-20.0.1\AndroidManifest.xml:37:13-48
+145
+146        <activity
+146-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\harsh\.gradle\caches\transforms-2\files-2.1\06e335a88f29e892ea89e02a9cd741a6\jetified-firebase-auth-21.0.1\AndroidManifest.xml:27:9-44:20
+147            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+147-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\harsh\.gradle\caches\transforms-2\files-2.1\06e335a88f29e892ea89e02a9cd741a6\jetified-firebase-auth-21.0.1\AndroidManifest.xml:28:13-80
+148            android:excludeFromRecents="true"
+148-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\harsh\.gradle\caches\transforms-2\files-2.1\06e335a88f29e892ea89e02a9cd741a6\jetified-firebase-auth-21.0.1\AndroidManifest.xml:29:13-46
+149            android:exported="true"
+149-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\harsh\.gradle\caches\transforms-2\files-2.1\06e335a88f29e892ea89e02a9cd741a6\jetified-firebase-auth-21.0.1\AndroidManifest.xml:30:13-36
+150            android:launchMode="singleTask"
+150-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\harsh\.gradle\caches\transforms-2\files-2.1\06e335a88f29e892ea89e02a9cd741a6\jetified-firebase-auth-21.0.1\AndroidManifest.xml:31:13-44
+151            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+151-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\harsh\.gradle\caches\transforms-2\files-2.1\06e335a88f29e892ea89e02a9cd741a6\jetified-firebase-auth-21.0.1\AndroidManifest.xml:32:13-72
+152            <intent-filter>
+152-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\harsh\.gradle\caches\transforms-2\files-2.1\06e335a88f29e892ea89e02a9cd741a6\jetified-firebase-auth-21.0.1\AndroidManifest.xml:33:13-43:29
+153                <action android:name="android.intent.action.VIEW" />
+153-->E:\flutter\minor Project\atulya_app\android\app\src\main\AndroidManifest.xml:6:5-57
+153-->E:\flutter\minor Project\atulya_app\android\app\src\main\AndroidManifest.xml:6:13-54
+154
+155                <category android:name="android.intent.category.DEFAULT" />
+155-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\harsh\.gradle\caches\transforms-2\files-2.1\06e335a88f29e892ea89e02a9cd741a6\jetified-firebase-auth-21.0.1\AndroidManifest.xml:36:17-76
+155-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\harsh\.gradle\caches\transforms-2\files-2.1\06e335a88f29e892ea89e02a9cd741a6\jetified-firebase-auth-21.0.1\AndroidManifest.xml:36:27-73
+156                <category android:name="android.intent.category.BROWSABLE" />
+156-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\harsh\.gradle\caches\transforms-2\files-2.1\06e335a88f29e892ea89e02a9cd741a6\jetified-firebase-auth-21.0.1\AndroidManifest.xml:37:17-78
+156-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\harsh\.gradle\caches\transforms-2\files-2.1\06e335a88f29e892ea89e02a9cd741a6\jetified-firebase-auth-21.0.1\AndroidManifest.xml:37:27-75
+157
+158                <data
+158-->E:\flutter\minor Project\atulya_app\android\app\src\main\AndroidManifest.xml:7:5-36
+159                    android:host="firebase.auth"
+160                    android:path="/"
+161                    android:scheme="genericidp" />
+161-->E:\flutter\minor Project\atulya_app\android\app\src\main\AndroidManifest.xml:7:11-33
+162            </intent-filter>
+163        </activity>
+164        <activity
+164-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\harsh\.gradle\caches\transforms-2\files-2.1\06e335a88f29e892ea89e02a9cd741a6\jetified-firebase-auth-21.0.1\AndroidManifest.xml:45:9-62:20
+165            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+165-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\harsh\.gradle\caches\transforms-2\files-2.1\06e335a88f29e892ea89e02a9cd741a6\jetified-firebase-auth-21.0.1\AndroidManifest.xml:46:13-79
+166            android:excludeFromRecents="true"
+166-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\harsh\.gradle\caches\transforms-2\files-2.1\06e335a88f29e892ea89e02a9cd741a6\jetified-firebase-auth-21.0.1\AndroidManifest.xml:47:13-46
+167            android:exported="true"
+167-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\harsh\.gradle\caches\transforms-2\files-2.1\06e335a88f29e892ea89e02a9cd741a6\jetified-firebase-auth-21.0.1\AndroidManifest.xml:48:13-36
+168            android:launchMode="singleTask"
+168-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\harsh\.gradle\caches\transforms-2\files-2.1\06e335a88f29e892ea89e02a9cd741a6\jetified-firebase-auth-21.0.1\AndroidManifest.xml:49:13-44
+169            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+169-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\harsh\.gradle\caches\transforms-2\files-2.1\06e335a88f29e892ea89e02a9cd741a6\jetified-firebase-auth-21.0.1\AndroidManifest.xml:50:13-72
+170            <intent-filter>
+170-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\harsh\.gradle\caches\transforms-2\files-2.1\06e335a88f29e892ea89e02a9cd741a6\jetified-firebase-auth-21.0.1\AndroidManifest.xml:51:13-61:29
+171                <action android:name="android.intent.action.VIEW" />
+171-->E:\flutter\minor Project\atulya_app\android\app\src\main\AndroidManifest.xml:6:5-57
+171-->E:\flutter\minor Project\atulya_app\android\app\src\main\AndroidManifest.xml:6:13-54
+172
+173                <category android:name="android.intent.category.DEFAULT" />
+173-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\harsh\.gradle\caches\transforms-2\files-2.1\06e335a88f29e892ea89e02a9cd741a6\jetified-firebase-auth-21.0.1\AndroidManifest.xml:36:17-76
+173-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\harsh\.gradle\caches\transforms-2\files-2.1\06e335a88f29e892ea89e02a9cd741a6\jetified-firebase-auth-21.0.1\AndroidManifest.xml:36:27-73
+174                <category android:name="android.intent.category.BROWSABLE" />
+174-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\harsh\.gradle\caches\transforms-2\files-2.1\06e335a88f29e892ea89e02a9cd741a6\jetified-firebase-auth-21.0.1\AndroidManifest.xml:37:17-78
+174-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\harsh\.gradle\caches\transforms-2\files-2.1\06e335a88f29e892ea89e02a9cd741a6\jetified-firebase-auth-21.0.1\AndroidManifest.xml:37:27-75
+175
+176                <data
+176-->E:\flutter\minor Project\atulya_app\android\app\src\main\AndroidManifest.xml:7:5-36
+177                    android:host="firebase.auth"
+178                    android:path="/"
+179                    android:scheme="recaptcha" />
+179-->E:\flutter\minor Project\atulya_app\android\app\src\main\AndroidManifest.xml:7:11-33
+180            </intent-filter>
+181        </activity>
+182
+183        <service
+183-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\harsh\.gradle\caches\transforms-2\files-2.1\06e335a88f29e892ea89e02a9cd741a6\jetified-firebase-auth-21.0.1\AndroidManifest.xml:64:9-73:19
+184            android:name="com.google.firebase.auth.api.fallback.service.FirebaseAuthFallbackService"
+184-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\harsh\.gradle\caches\transforms-2\files-2.1\06e335a88f29e892ea89e02a9cd741a6\jetified-firebase-auth-21.0.1\AndroidManifest.xml:65:13-101
+185            android:enabled="true"
+185-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\harsh\.gradle\caches\transforms-2\files-2.1\06e335a88f29e892ea89e02a9cd741a6\jetified-firebase-auth-21.0.1\AndroidManifest.xml:66:13-35
+186            android:exported="false" >
+186-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\harsh\.gradle\caches\transforms-2\files-2.1\06e335a88f29e892ea89e02a9cd741a6\jetified-firebase-auth-21.0.1\AndroidManifest.xml:67:13-37
+187            <intent-filter>
+187-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\harsh\.gradle\caches\transforms-2\files-2.1\06e335a88f29e892ea89e02a9cd741a6\jetified-firebase-auth-21.0.1\AndroidManifest.xml:68:13-72:29
+188                <action android:name="com.google.firebase.auth.api.gms.service.START" />
+188-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\harsh\.gradle\caches\transforms-2\files-2.1\06e335a88f29e892ea89e02a9cd741a6\jetified-firebase-auth-21.0.1\AndroidManifest.xml:69:17-89
+188-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\harsh\.gradle\caches\transforms-2\files-2.1\06e335a88f29e892ea89e02a9cd741a6\jetified-firebase-auth-21.0.1\AndroidManifest.xml:69:25-86
+189
+190                <category android:name="android.intent.category.DEFAULT" />
+190-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\harsh\.gradle\caches\transforms-2\files-2.1\06e335a88f29e892ea89e02a9cd741a6\jetified-firebase-auth-21.0.1\AndroidManifest.xml:36:17-76
+190-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\harsh\.gradle\caches\transforms-2\files-2.1\06e335a88f29e892ea89e02a9cd741a6\jetified-firebase-auth-21.0.1\AndroidManifest.xml:36:27-73
+191            </intent-filter>
+192        </service>
+193
+194        <activity
+194-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\harsh\.gradle\caches\transforms-2\files-2.1\eec776c05fc48d66c3c27bb18f3022b2\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
+195            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+195-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\harsh\.gradle\caches\transforms-2\files-2.1\eec776c05fc48d66c3c27bb18f3022b2\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:19-85
+196            android:exported="false"
+196-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\harsh\.gradle\caches\transforms-2\files-2.1\eec776c05fc48d66c3c27bb18f3022b2\jetified-play-services-base-18.0.1\AndroidManifest.xml:22:19-43
+197            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+197-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\harsh\.gradle\caches\transforms-2\files-2.1\eec776c05fc48d66c3c27bb18f3022b2\jetified-play-services-base-18.0.1\AndroidManifest.xml:21:19-78
+198
+199        <provider
+199-->[com.google.firebase:firebase-common:20.0.0] C:\Users\harsh\.gradle\caches\transforms-2\files-2.1\a43864ea4e098ef6189d5e2b76fd253d\jetified-firebase-common-20.0.0\AndroidManifest.xml:26:9-31:39
+200            android:name="com.google.firebase.provider.FirebaseInitProvider"
+200-->[com.google.firebase:firebase-common:20.0.0] C:\Users\harsh\.gradle\caches\transforms-2\files-2.1\a43864ea4e098ef6189d5e2b76fd253d\jetified-firebase-common-20.0.0\AndroidManifest.xml:27:13-77
+201            android:authorities="com.example.atulya_app.firebaseinitprovider"
+201-->[com.google.firebase:firebase-common:20.0.0] C:\Users\harsh\.gradle\caches\transforms-2\files-2.1\a43864ea4e098ef6189d5e2b76fd253d\jetified-firebase-common-20.0.0\AndroidManifest.xml:28:13-72
+202            android:directBootAware="true"
+202-->[com.google.firebase:firebase-common:20.0.0] C:\Users\harsh\.gradle\caches\transforms-2\files-2.1\a43864ea4e098ef6189d5e2b76fd253d\jetified-firebase-common-20.0.0\AndroidManifest.xml:29:13-43
+203            android:exported="false"
+203-->[com.google.firebase:firebase-common:20.0.0] C:\Users\harsh\.gradle\caches\transforms-2\files-2.1\a43864ea4e098ef6189d5e2b76fd253d\jetified-firebase-common-20.0.0\AndroidManifest.xml:30:13-37
+204            android:initOrder="100" />
+204-->[com.google.firebase:firebase-common:20.0.0] C:\Users\harsh\.gradle\caches\transforms-2\files-2.1\a43864ea4e098ef6189d5e2b76fd253d\jetified-firebase-common-20.0.0\AndroidManifest.xml:31:13-36
+205
+206        <meta-data
+206-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\harsh\.gradle\caches\transforms-2\files-2.1\6fb421735c13aa7ce9fdc7ac12c637fc\jetified-play-services-basement-18.0.0\AndroidManifest.xml:21:9-23:69
+207            android:name="com.google.android.gms.version"
+207-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\harsh\.gradle\caches\transforms-2\files-2.1\6fb421735c13aa7ce9fdc7ac12c637fc\jetified-play-services-basement-18.0.0\AndroidManifest.xml:22:13-58
+208            android:value="@integer/google_play_services_version" />
+208-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\harsh\.gradle\caches\transforms-2\files-2.1\6fb421735c13aa7ce9fdc7ac12c637fc\jetified-play-services-basement-18.0.0\AndroidManifest.xml:23:13-66
+209    </application>
+210
+211</manifest>

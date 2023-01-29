@@ -1,0 +1,4 @@
+#Wed Jan 19 15:51:45 IST 2022
+base.0=E\:\\flutter\\minor Project\\atulya_app\\build\\app\\intermediates\\dex\\release\\minifyReleaseWithR8\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex
